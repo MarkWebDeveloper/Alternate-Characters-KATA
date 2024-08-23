@@ -10,5 +10,8 @@ public class SolutionTest {
         assertEquals(true, Solution.isAlt("amazon"));
         assertEquals(false, Solution.isAlt("apple"));
         assertEquals(true, Solution.isAlt("banana"));
+        assertEquals(true, Solution.isAlt("parabola"));
+        assertEquals(false, Solution.isAlt("shmakiskd"));
+        assertEquals(false, Solution.isAlt("aaacabegi"));
     }
 }
