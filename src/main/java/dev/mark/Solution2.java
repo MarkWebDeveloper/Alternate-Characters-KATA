@@ -14,16 +14,14 @@ public class Solution2 {
         Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
         Set<Character> consonants = new HashSet<>(Arrays.asList('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'));
 
-        int index = 1;
+        for (int i = 1; i < word.length(); i++) {
 
-        for (index = 1; index < word.length(); index++) {
-
-            currentChar = word.charAt(index);
-            prevChar = word.charAt(index - 1);
+            currentChar = word.charAt(i);
+            prevChar = word.charAt(i - 1);
 
             if (vowels.contains(currentChar) && consonants.contains(prevChar)) {
                 continue;
-            } if (consonants.contains(currentChar) && vowels.contains(prevChar)) {
+            } else if (consonants.contains(currentChar) && vowels.contains(prevChar)) {
                 continue;
             } else {
                 return false;
