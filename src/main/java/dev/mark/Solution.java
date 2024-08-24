@@ -6,14 +6,6 @@ import java.util.Set;
 
 public class Solution {
     public static boolean isAlt(String word) {
-        //make note that 'y' should not be treated as vowel
-
-        // isAlt("amazon")
-        // // true
-        // isAlt("apple")
-        // // false
-        // isAlt("banana")
-        // // true
 
         Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
         Set<Character> consonants = new HashSet<>(Arrays.asList('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'));
